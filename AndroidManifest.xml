@@ -3308,5 +3308,17 @@
                        android:resource="@string/hazard_settings_summary"/>
         </activity>
 
+        <!-- Color settings activity. -->
+        <activity android:name="Settings$ColorSettingsActivity"
+                android:label="@string/color_manager_title"
+                android:excludeFromRecents="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
+                android:value="com.android.settings.aoscp.colormanager.ThemesFragment" />
+        </activity>
+
     </application>
 </manifest>

@@ -131,6 +131,7 @@ import com.android.settings.wifi.WifiAPITest;
 import com.android.settings.wifi.WifiInfo;
 import com.android.settings.wifi.WifiSettings;
 import com.android.settings.wifi.p2p.WifiP2pSettings;
+import com.android.settings.aoscp.colormanager.ThemesFragment;
 
 import com.toxyc.hazard.HazardSettings;
 
@@ -256,6 +257,7 @@ public class SettingsGateway {
             BluetoothDeviceDetailsFragment.class.getName(),
             DataUsageList.class.getName(),
             HazardSettings.class.getName(),
+            ThemesFragment.class.getName(),
     };
 
     public static final String[] SETTINGS_FOR_RESTRICTED = {

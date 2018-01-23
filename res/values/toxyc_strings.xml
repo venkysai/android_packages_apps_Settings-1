@@ -102,5 +102,9 @@
     <string name="menu_show_themes">Show themes</string>
     <string name="menu_hide_themes">Hide themes</string>
 
+    <!-- Theme applied toast -->
+    <string name="theme_applied_toast">Theme applied.</string>
+    <string name="applying_theme_toast">Applying theme, please wait...</string>
+
 </resources>
 

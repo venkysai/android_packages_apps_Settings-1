@@ -18,6 +18,15 @@
         xmlns:lineage="http://schemas.android.com/apk/res/lineageos.platform"
         android:title="@string/about_settings">
 
+        <!-- ToxycOS Banner -->
+        <PreferenceScreen android:key="toxyc_header"
+                          android:enabled="false"
+                          android:layout="@layout/about_toxyc_header" />
+
+        <Preference android:key="device_dialog"
+                android:title="@string/os_informations"
+                android:summary="@string/os_informations_summary" />
+
         <!-- System update settings - launches activity -->
         <Preference android:key="additional_system_update_settings"
                     android:title="@string/additional_system_update_settings_list_item_title">
@@ -25,12 +34,6 @@
                     android:targetPackage="@string/additional_system_update"
                     android:targetClass="@string/additional_system_update_menu" />
         </Preference>
-
-        <!-- LineageOS updates -->
-        <org.lineageos.internal.preference.deviceinfo.LineageUpdatesPreference
-                android:key="lineage_updates"
-                lineage:requiresOwner="true"
-                lineage:requiresPackage="org.lineageos.updater" />
 
         <!-- Device status - launches activity -->
         <Preference android:key="status_info"
@@ -45,57 +48,10 @@
             <intent android:action="android.settings.SHOW_MANUAL" />
         </Preference>
 
-        <!-- Legal Information -->
-        <Preference
-                android:key="legal_container"
-                android:title="@string/legal_information"
-                android:fragment="com.android.settings.LegalSettings" />
-
-        <Preference
-                android:key="regulatory_info"
-                android:title="@string/regulatory_labels">
-            <intent android:action="android.settings.SHOW_REGULATORY_INFO" />
-        </Preference>
-
         <Preference
                 android:key="safety_info"
                 android:title="@string/safety_and_regulatory_info">
                 <intent android:action="android.settings.SHOW_SAFETY_AND_REGULATORY_INFO" />
-        </Preference>
-
-        <!-- Feedback on the device -->
-        <Preference android:key="device_feedback"
-                android:title="@string/device_feedback" />
-
-        <!-- Contributors cloud -->
-        <org.lineageos.internal.lineageparts.LineagePartsPreference
-                android:key="contributors" />
-
-        <!-- Device hardware model -->
-        <Preference
-                android:key="device_model"
-                android:title="@string/model_info"
-                android:summary="@string/summary_placeholder"/>
-
-        <!-- Device firmware version -->
-        <Preference android:key="firmware_version"
-                android:title="@string/firmware_version"
-                android:summary="@string/summary_placeholder"/>
-
-        <!-- LineageOS version -->
-        <org.lineageos.internal.preference.deviceinfo.LineageVersionPreference
-                android:key="lineage_version" />
-
-        <!-- LineageOS API version -->
-        <org.lineageos.internal.preference.deviceinfo.LineageAPIVersionPreference
-                android:key="lineage_api_level" />
-
-        <!-- Security patch level -->
-        <Preference android:key="security_patch"
-                android:title="@string/security_patch"
-                android:summary="@string/summary_placeholder">
-                <intent android:action="android.intent.action.VIEW"
-                        android:data="https://source.android.com/security/bulletin/" />
         </Preference>
 
         <!-- Device FCC equipment id -->
@@ -115,10 +71,6 @@
                 android:key="kernel_version"
                 android:title="@string/kernel_version"
                 android:summary="@string/summary_placeholder"/>
-
-        <!-- Build date -->
-        <org.lineageos.internal.preference.deviceinfo.LineageBuildDatePreference
-                android:key="build_date" />
 
         <!-- Detailed build version -->
         <Preference

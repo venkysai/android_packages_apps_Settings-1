@@ -36,4 +36,8 @@
         android:key="theme_black"
         android:title="@string/theme_black_title" />
 
+    <com.android.settings.widget.RadioButtonPreference
+        android:key="theme_toxyc"
+        android:title="@string/theme_toxyc_title" />
+
 </PreferenceScreen>

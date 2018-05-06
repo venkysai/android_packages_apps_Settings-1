@@ -46,6 +46,7 @@ public class ThemesFragment extends DashboardFragment
     private static final String KEY_THEME_LIGHT = "theme_light";
     private static final String KEY_THEME_DARK = "theme_dark";
     private static final String KEY_THEME_BLACK = "theme_black";
+    private static final String KEY_THEME_TOXYC = "theme_toxyc";
 
     List<RadioButtonPreference> mThemes = new ArrayList<>();
 
@@ -106,6 +107,9 @@ public class ThemesFragment extends DashboardFragment
             case 3:
                 updateThemeItems(KEY_THEME_BLACK);
                 break;
+            case 4:
+                updateThemeItems(KEY_THEME_TOXYC);
+                break;
         }
     }
 
@@ -144,6 +148,10 @@ public class ThemesFragment extends DashboardFragment
             case KEY_THEME_BLACK:
                 Settings.Secure.putInt(getContentResolver(), 
                          Settings.Secure.DEVICE_THEME, 3);
+                break;
+            case KEY_THEME_TOXYC:
+                Settings.Secure.putInt(getContentResolver(), 
+                         Settings.Secure.DEVICE_THEME, 4);
                 break;
         }
         updateThemeItems(pref.getKey());

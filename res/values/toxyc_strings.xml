@@ -61,6 +61,7 @@
     <string name="theme_light_title">Light</string>
     <string name="theme_dark_title">Dark</string>
     <string name="theme_black_title">Black</string>
+    <string name="theme_toxyc_title">Toxyc</string>
     <!-- Color Manager: Accents Tab [CHAR LIMIT=20] -->
     <string name="color_manager_tab_accents">Accents</string>
     <string name="accent_variation_default_title">Default</string>

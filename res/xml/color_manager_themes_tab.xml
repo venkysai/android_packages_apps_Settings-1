@@ -40,4 +40,8 @@
         android:key="theme_toxyc"
         android:title="@string/theme_toxyc_title" />
 
+    <com.android.settings.widget.RadioButtonPreference
+        android:key="theme_hazard"
+        android:title="@string/theme_hazard_title" />
+
 </PreferenceScreen>

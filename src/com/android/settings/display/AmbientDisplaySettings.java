@@ -27,6 +27,8 @@ import com.android.settings.core.instrumentation.MetricsFeatureProvider;
 import com.android.settings.dashboard.DashboardFragment;
 import com.android.settings.gestures.DoubleTapScreenPreferenceController;
 import com.android.settings.gestures.PickupGesturePreferenceController;
+import com.android.settings.aoscp.doze.AmbientPlayPreferenceController;
+import com.android.settings.aoscp.doze.AmbientPlayKeyguardPreferenceController;
 import com.android.settings.aoscp.doze.HandWaveGesturePreferenceController;
 import com.android.settings.search.BaseSearchIndexProvider;
 import com.android.settings.search.Indexable;
@@ -64,6 +66,8 @@ public class AmbientDisplaySettings extends DashboardFragment {
                 MY_USER_ID, KEY_AMBIENT_DISPLAY_PICK_UP));
         controllers.add(new HandWaveGesturePreferenceController(context, config,
                 MY_USER_ID));
+        controllers.add(new AmbientPlayPreferenceController(context));
+        controllers.add(new AmbientPlayKeyguardPreferenceController(context));
         return controllers;
     }
 

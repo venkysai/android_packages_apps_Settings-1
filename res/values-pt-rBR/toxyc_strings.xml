@@ -115,4 +115,10 @@
     <string name="ambient_display_hand_wave_title" product="device">Acene para verificar o dispositivo</string>
     <string name="ambient_display_hand_wave_summary" product="device">Para verificar a hora, os ícones de notificação e outras informações, acene para o seu dispositivo.</string>
 
+    <!-- Ambient Play -->
+    <string name="ambient_recognition_title">Música Ambiente</string>
+    <string name="ambient_recognition_summary">Seja notificado com informações da música que está sendo tocada ao seu redor. Aumenta o uso da bateria e dados.</string>
+    <string name="ambient_recognition_lockscreen_title">Mostrar informação da música</string>
+    <string name="ambient_recognition_lockscreen_summary">Na tela de bloqueio</string>
+
 </resources>

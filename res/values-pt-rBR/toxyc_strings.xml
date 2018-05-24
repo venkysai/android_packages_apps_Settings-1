@@ -94,6 +94,11 @@
     <string name="accent_white_title">Branco</string>
     <!-- Color Manager: User Accents -->
     <string name="accent_user_title">Tom personalizado</string>
+    <!-- Color Manager: Settings -->
+    <string name="category_settings_title">Configurações</string>
+    <!-- Color Manager: Settings: Theme Alpha -->
+    <string name="theme_alpha_title">Mostrar transparência</string>
+    <string name="theme_alpha_summary">Para elementos específicos do sistema, como as configurações rápidas</string>
 
     <!-- Manage applications: Show Color Manager themes -->
     <string name="filter_theme_apps">Temas</string>

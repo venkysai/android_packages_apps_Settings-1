@@ -134,6 +134,7 @@ import com.android.settings.wifi.p2p.WifiP2pSettings;
 import com.android.settings.aoscp.colormanager.ThemesFragment;
 
 import com.toxyc.hazard.HazardSettings;
+import com.toxyc.hazard.fragments.ButtonSettings;
 
 public class SettingsGateway {
 
@@ -258,6 +259,7 @@ public class SettingsGateway {
             DataUsageList.class.getName(),
             HazardSettings.class.getName(),
             ThemesFragment.class.getName(),
+            ButtonSettings.class.getName(),
     };
 
     public static final String[] SETTINGS_FOR_RESTRICTED = {

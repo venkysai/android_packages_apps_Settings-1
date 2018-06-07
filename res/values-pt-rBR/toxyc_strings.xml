@@ -126,4 +126,8 @@
     <string name="ambient_recognition_lockscreen_title">Mostrar informação da música</string>
     <string name="ambient_recognition_lockscreen_summary">Na tela de bloqueio</string>
 
+    <!-- OTA -->
+    <string name="toxyc_update_settings_title">Atualizações daToxycOS</string>
+    <string name="toxyc_update_settings_summary">Encontre novas atualizações</string>
+
 </resources>

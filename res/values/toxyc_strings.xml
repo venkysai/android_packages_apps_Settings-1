@@ -125,4 +125,8 @@
     <string name="ambient_recognition_lockscreen_title">Show ambient indication</string>
     <string name="ambient_recognition_lockscreen_summary">On the lockscreen</string>
 
+    <!-- OTA -->
+    <string name="toxyc_update_settings_title">ToxycOS updates</string>
+    <string name="toxyc_update_settings_summary">Find new updates</string>
+
 </resources>
